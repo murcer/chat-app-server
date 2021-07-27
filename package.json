@@ -5,7 +5,8 @@
 	"scripts": {
 		"start": "npm run build && node ./build/index.js",
 		"build": "npm run tsc",
-		"dev": "ts-node-dev --respawn --transpile-only index.ts"
+		"dev": "ts-node-dev --respawn --transpile-only index.ts",
+		"tsc": "tsc"
 	},
 	"author": "Hazem Krimi",
 	"license": "ISC",
