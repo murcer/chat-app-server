@@ -97,17 +97,6 @@ import http from 'http';
 		}
 	});
 
-	// app.post('/create-room', (req: Request, res: Response) => {
-	// 	try {
-	// 		const createdRoom = req.body.room || v4();
-
-	// 		rooms.push({ id: createdRoom, messages: [] });
-
-	// 	} catch (err) {
-	// 		return res.status(500).json({ message: err.message });
-	// 	}
-	// });
-
 	app.get('*', (req: Request, res: Response) => {
 		return res.status(404).json({ message: 'Route does not exist' });
 	});
